@@ -1,0 +1,1 @@
+var pergunta = prompt("No inicio da série Stranger Things, Eleven conhecida como 'onze' consegue fugir de uma suposta prisão. Qual é o nome desse lugar?");

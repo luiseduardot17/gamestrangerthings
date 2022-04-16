@@ -1,0 +1,45 @@
+body {
+    background-image: url(./telainicialwallpaper.jpg);
+    background-size: cover;
+}
+html {
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    box-sizing: border-box;
+}
+header {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+div1 {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+div2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btneleven {
+    transition: all 0.5s;
+}
+.btneleven:hover {
+    transform: scale(1.1);
+}
+.btnhopper {
+    transition: all 0.5s;
+}
+.btnhopper:hover {
+    transform: scale(1.1);
+}
+.btnwill {
+    transition: all 0.5s;
+}
+.btnwill:hover {
+    transform: scale(1.1);
+}
