@@ -1,5 +1,5 @@
 body {
-    background-image: url(./backgrounds/vitoriabackground.jpg);
+    background-image: url(./backgrounds/gameoverbackground.jpg);
     background-size:cover;
     background-repeat: no-repeat;
 }
@@ -15,17 +15,11 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: gold;
+    color:darkred;
     font-family: 'EB Garamond', serif;
-    font-size: 300%;
-}
-h2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: gold;
-    font-family: 'EB Garamond', serif;
-    font-size: 200%;
+    font-size: 500%;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
 }
 .image {
     display: flex;
@@ -33,6 +27,25 @@ h2 {
     flex-direction: row;
     justify-content: flex-end;
     max-width:10%;
+}
+h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'EB Garamond', serif;
+    font-size: 250%;
+    color: yellow;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: gold;
+    font-family: 'EB Garamond', serif;
+    font-size: 200%;
+    padding: 3%;
 }
 .botaorestart {
     display: flex;
@@ -61,9 +74,10 @@ h2 {
 }
 divbtn {
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    align-items: flex-end;
-    padding: 10%;
+    align-items: flex-start;
+    padding: 5%;
 }
 @keyframes pulsar {
     0%{
