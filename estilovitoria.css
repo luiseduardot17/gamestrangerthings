@@ -1,0 +1,37 @@
+body {
+    background-image: url(./backgrounds/vitoriabackground.jpg);
+    background-size: cover;
+}
+html {
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    box-sizing: border-box;
+}
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: gold;
+}
+h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: gold;
+}
+.botaorestart {
+    display: flex;
+    background-color: gold;
+    color: black;
+    border-radius: 50px;
+    max-width:min-content;
+}
+divbtn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+}

@@ -1,5 +1,5 @@
 body {
-    background-image: url(./telainicialwallpaper.jpg);
+    background-image: url(./backgrounds/telainicialwallpaper.jpg);
     background-size: cover;
 }
 html {
@@ -10,36 +10,109 @@ html {
     border: 0px;
     box-sizing: border-box;
 }
-header {
+divheader {
     display: flex;
     justify-content: center;
+}
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    background-color: black;
+    opacity: 70%;
+}
+.logo {
+    height: 30%;
+    width: 30%;
+}
+.sinopse {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: white;
+    font-size: 150%;
+    text-align: justify;
 }
 div1 {
     display: flex;
+    flex-direction: row;
     justify-content: center;
+    align-items: center;
     color: white;
+    background-color:black;
+    opacity: 70%;
+    margin: 0.5%;
+    text-align: center;
+    font-size: 90%;
+    font-family: 'EB Garamond', serif;
+}
+h3 {
+    background-color: black;
+    color:white;
+    font-size: 200%;
+    font-family: 'EB Garamond', serif;
 }
 div2 {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+div3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+div4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+div5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .btneleven {
     transition: all 0.5s;
 }
 .btneleven:hover {
-    transform: scale(1.1);
+    animation-name: pulsar;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 .btnhopper {
     transition: all 0.5s;
 }
 .btnhopper:hover {
-    transform: scale(1.1);
+    animation-name: pulsar;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 .btnwill {
     transition: all 0.5s;
 }
 .btnwill:hover {
-    transform: scale(1.1);
+    animation-name: pulsar;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes pulsar {
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.1);
+    }
 }

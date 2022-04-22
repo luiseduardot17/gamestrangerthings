@@ -1,0 +1,34 @@
+body {
+    background-image: url(./backgrounds/1eleven-stranger-things-eggos.png);
+    background-size: cover;
+}
+html {
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    box-sizing: border-box;
+}
+h1 {
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: black;
+    opacity: 70%;
+    font-family: 'EB Garamond', serif;
+    margin: 1%;
+    border-radius: 50px;
+}
+divpergunta3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 200%;
+    background-color: black;
+    opacity: 80%;
+    font-family: 'EB Garamond', serif;
+    border-radius: 50px;
+}
