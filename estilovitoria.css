@@ -1,6 +1,7 @@
 body {
     background-image: url(./backgrounds/vitoriabackground.jpg);
-    background-size: cover;
+    background-size:cover;
+    background-repeat: no-repeat;
 }
 html {
     height: 100%;
@@ -15,23 +16,46 @@ h1 {
     justify-content: center;
     align-items: center;
     color: gold;
+    font-family: 'EB Garamond', serif;
 }
 h2 {
     display: flex;
     justify-content: center;
     align-items: center;
     color: gold;
+    font-family: 'EB Garamond', serif;
 }
 .botaorestart {
-    display: flex;
-    background-color: gold;
-    color: black;
+    width: 140px;
+    height: 50px;
     border-radius: 50px;
-    max-width:min-content;
+    border-color: black;
+    background-color: gold;
+    transition: all 0.3s;
+    font-family: 'EB Garamond', serif;
+  }
+  
+.botaorestart:hover {
+    background-color:darkred;
+    transform: scale(1.1);
+    color: #e5e5e5;
+    animation-name: pulsar;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 divbtn {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: flex-end;
+    padding: 10%;
+}
+@keyframes pulsar {
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.1);
+    }
 }

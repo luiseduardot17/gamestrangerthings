@@ -1,6 +1,7 @@
 body {
-    background-image: url(./backgrounds/1eleven-stranger-things-eggos.png);
+    background-image: url(../backgrounds/elevenbackground1.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
 }
 html {
     height: 100%;
@@ -31,4 +32,18 @@ divpergunta3 {
     opacity: 80%;
     font-family: 'EB Garamond', serif;
     border-radius: 50px;
+}
+.botaoresponder {
+    width: 140px;
+    height: 50px;
+    border-radius: 50px;
+    border-color: #ffffff;
+    background-color: gold;
+    transition: all 0.3s;
+  }
+  
+.botaoresponder:hover {
+    background-color:darkred;
+    transform: scale(1.1);
+    color: #e5e5e5;
 }

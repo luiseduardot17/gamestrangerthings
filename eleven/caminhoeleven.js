@@ -12,7 +12,7 @@ function faseum() {
             contador++;
             if (contador >= 2) {
                 alert("Infelizmente você perdeu todas as suas chances!");
-                location.assign("./gameover.html")
+                location.assign("../gameover.html")
                 break;
             }
         } else if (resposta == 'b') {
@@ -20,7 +20,7 @@ function faseum() {
             contador++;
             if (contador >= 2) {
                 alert("Infelizmente você perdeu todas as suas chances!");
-                location.assign("./gameover.html")
+                location.assign("../gameover.html")
                 break;
             }
         }
@@ -41,7 +41,7 @@ function fasedois() {
             contador++;
             if (contador >= 2) {
                 alert("Infelizmente você perdeu todas as suas chances!");
-                location.assign("./gameover.html")
+                location.assign("../gameover.html")
                 break;
             }
         } else if (resposta == 'c') {
@@ -49,7 +49,7 @@ function fasedois() {
             contador++;
             if (contador >= 2) {
                 alert("Infelizmente você perdeu todas as suas chances!");
-                location.assign("./gameover.html")
+                location.assign("../gameover.html")
                 break;
             }
         }
@@ -63,14 +63,14 @@ function fasetres() {
 
         if (resposta == 'a') {
             alert('Resposta correta! O porão se tornou o quarto secreto de Eleven e seus amigos!')
-            location.assign("./vitoria.html")
+            location.assign("../vitoria.html")
             break;
         } else if (resposta == 'b') {
             alert("Resposta incorreta!");
             contador++;
             if (contador >= 2) {
                 alert("Infelizmente você perdeu todas as suas chances!");
-                location.assign("./gameover.html")
+                location.assign("../gameover.html")
                 break;
             }
         } else if (resposta == 'c') {
@@ -78,7 +78,7 @@ function fasetres() {
             contador++;
             if (contador >= 2) {
                 alert("Infelizmente você perdeu todas as suas chances!");
-                location.assign("./gameover.html")
+                location.assign("../gameover.html")
                 break;
             }
         }
