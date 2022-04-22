@@ -121,9 +121,18 @@ div5 {
 @media screen and (max-width: 425px){
     body {
         background-image: url(./backgrounds/telainicialwallpapermobile.jpg);
-        background-size: 350%;
-        background-position:center;
+        background-size:auto;
+        background-position:top;
         background-repeat: no-repeat;
+
+    }
+    html {
+        height: 100%;
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+        border: 0px;
+        box-sizing: border-box;
     }
     divheader {
         display: flex;
@@ -138,7 +147,7 @@ div5 {
         align-items: center;
         text-align:justify;
         background-color: black;
-        opacity: 70%;
+        opacity: 90%;
     }
     .logo {
     height: 50%;
