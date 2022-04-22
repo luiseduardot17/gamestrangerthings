@@ -121,7 +121,8 @@ div5 {
 @media screen and (max-width: 425px){
     body {
         background-image: url(./backgrounds/telainicialwallpapermobile.jpg);
-        background-size:cover;
+        background-size: 350%;
+        background-position:center;
         background-repeat: no-repeat;
     }
     divheader {
