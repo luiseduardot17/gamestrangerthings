@@ -117,3 +117,55 @@ div5 {
         transform: scale(1.1);
     }
 }
+/* SMARTPHONE G */
+@media screen and (max-width: 425px){
+    body {
+        background-image: url(./backgrounds/telainicialwallpapermobile.jpg);
+        background-size:cover;
+        background-repeat: no-repeat;
+    }
+    divheader {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align:justify;
+        background-color: black;
+        opacity: 70%;
+    }
+    .logo {
+    height: 50%;
+    width: 100%;
+    }
+    .sinopse {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 150%;
+    text-align: center;
+    }
+    div1 {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        color: white;
+        background-color:black;
+        opacity: 70%;
+        margin: 5%;
+        font-size: 80%;
+        font-family: 'EB Garamond', serif;
+    }
+    div2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
