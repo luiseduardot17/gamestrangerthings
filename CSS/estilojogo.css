@@ -1,33 +1,43 @@
-body {
-    background-image: url(./backgrounds/telainicialwallpaper.jpg);
+body,
+html {
+    min-height: 100%;
+    background-image: url(../backgrounds/telainicialwallpaper.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
-html {
-    height: 100%;
-    width: 100%;
-    padding: 0px;
-    margin: 0px;
-    border: 0px;
-    box-sizing: border-box;
+
+body {
+    padding: 0;
+    margin: 0;
 }
-divheader {
-    display: flex;
-    justify-content: center;
-}
+
 header {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
-    text-align:center;
-    background-color: black;
-    opacity: 70%;
+    background: rgba(22, 4, 4, 0.623);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(71, 75, 136, 0.37);
 }
+
+footer {
+    position:relative;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    padding-top: 5px;
+    text-align: center;
+    background-color: black;
+    color: #FFF;
+}
+
 .logo {
     height: 30%;
     width: 30%;
+    opacity: 50%;
 }
+
 .sinopse {
     display: flex;
     justify-content: center;
@@ -36,96 +46,130 @@ header {
     font-size: 150%;
     text-align: justify;
 }
-div1 {
+
+.titulo {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     color: white;
-    background-color:black;
-    opacity: 70%;
+    background: rgba(22, 4, 4, 0.623);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(71, 75, 136, 0.37);
     margin: 0.5%;
+    border-radius: 15px;
     text-align: center;
-    font-size: 90%;
+    font-size: 80%;
     font-family: 'EB Garamond', serif;
 }
-h3 {
+
+.namePerson {
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    margin-bottom: 50px;
     background-color: black;
-    color:white;
+    color: white;
     font-size: 200%;
     font-family: 'EB Garamond', serif;
 }
-div2 {
+
+ul {
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    align-items: center;
-}
-div3 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-div4 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-div5 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
-.btneleven {
-    transition: all 0.5s;
+li {
+    list-style-type: none;
 }
-.btneleven:hover {
+
+.botoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30%;
+    gap: 10%;
+}
+
+.foto1 {
+    width: 250px;
+    height: 200px;
+}
+
+.foto2 {
+    width: 200px;
+    height: 200px;
+}
+
+.foto3 {
+    width: 200px;
+    height: 200px;
+}
+
+.btnEleven {
+    display: flex;
+    justify-content: center;
+    height: 50%;
+}
+
+.btnHopper {
+    display: flex;
+    justify-content: center;
+    height: 50%;
+}
+
+.btnWill {
+    display: flex;
+    justify-content: center;
+    height: 50%;
+}
+
+.btnEleven:hover {
     animation-name: pulsar;
     animation-duration: 0.5s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
-.btnhopper {
-    transition: all 0.5s;
-}
-.btnhopper:hover {
+
+.btnHopper:hover {
     animation-name: pulsar;
     animation-duration: 0.5s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
-.btnwill {
-    transition: all 0.5s;
-}
-.btnwill:hover {
+
+.btnWill:hover {
     animation-name: pulsar;
     animation-duration: 0.5s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
+
 @keyframes pulsar {
-    0%{
+    0% {
         transform: scale(1);
     }
-    100%{
+
+    100% {
         transform: scale(1.1);
     }
 }
+
 /* SMARTPHONE G */
-@media screen and (max-width: 425px){
+@media screen and (max-width: 425px) {
     body {
         background-image: url(./backgrounds/telainicialwallpapermobile.jpg);
-        background-size:auto;
-        background-position:top;
+        background-size: auto;
+        background-position: top;
         background-repeat: no-repeat;
 
     }
+
     html {
         height: 100%;
         width: 100%;
@@ -134,44 +178,50 @@ div5 {
         border: 0px;
         box-sizing: border-box;
     }
+
     divheader {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
+
     header {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        text-align:justify;
+        text-align: justify;
         background-color: black;
         opacity: 90%;
     }
+
     .logo {
-    height: 50%;
-    width: 100%;
+        height: 50%;
+        width: 100%;
     }
+
     .sinopse {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-size: 150%;
-    text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 150%;
+        text-align: center;
     }
+
     div1 {
         display: flex;
         flex-direction: row;
         text-align: center;
         color: white;
-        background-color:black;
+        background-color: black;
         opacity: 70%;
         margin: 5%;
         font-size: 80%;
         font-family: 'EB Garamond', serif;
     }
+
     div2 {
         display: flex;
         flex-direction: column;

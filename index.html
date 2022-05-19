@@ -6,44 +6,62 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" media="(max-width: 425px)" href="./estilojogo.css">
-  <link rel="stylesheet" href="./estilojogo.css">
+  <link rel="stylesheet" href="CSS/estilojogo.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@700&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/x-icon" href="./demogorgon.ico">
+  <link rel="icon" type="image/x-icon" href="images/demogorgon.ico">
   <title>Stranger Things Game</title>
-  
+
 </head>
 
 <body>
 
   <header>
-    <divheader>
-    <img class="logo" src="./logo.png" alt="logo da serie escrito stranger things">
-    <p class="sinopse"> Em 6 de Novembro, 1983 na pequena cidade de Hawkins, Indiana, o garoto de 12 anos, Will Byers desaparece misteriosamente.
-        A mãe de Will, Joyce, torna-se frenética e tenta encontrar Will enquanto o chefe de polícia Jim Hopper começa a investigar, e assim fazem também os amigos de Will: Dustin, Mike e Lucas.
-        No dia seguinte, uma menina com poderes, que sabe o paradeiro de Will, é encontrada pelos meninos.
-        À medida que eles descobrem a verdade, uma sinistra agência do governo tenta encobri-los, enquanto uma força mais insidiosa espreita logo abaixo da superfície.</p>
-    </divheader>
-      </header>
+    <img class="logo" src="images/logo.png" alt="logo da serie escrito stranger things">
+    <p class="sinopse"> Em 6 de Novembro, 1983 na pequena cidade de Hawkins, Indiana, o garoto de 12 anos, Will Byers
+      desaparece misteriosamente.
+      A mãe de Will, Joyce, torna-se frenética e tenta encontrar Will enquanto o chefe de polícia Jim Hopper começa a
+      investigar, e assim fazem também os amigos de Will: Dustin, Mike e Lucas.
+      No dia seguinte, uma menina com poderes, que sabe o paradeiro de Will, é encontrada pelos meninos.
+      À medida que eles descobrem a verdade, uma sinistra agência do governo tenta encobri-los, enquanto uma força
+      mais insidiosa espreita logo abaixo da superfície.</p>
+  </header>
 
-  <div1>
-    <h2> Este é um jogo onde você encontrará perguntas sobre a série, e assim, deve respondê-las corretamente para chegar até o final.<br>Escolha seu personagem para iniciar o game:</h2>
-  </div1>
-  <div2>
-    <div3><a class="btneleven" href="./eleven/fase1eleven.html">
-        <img src="./personagem1eleven.png" height="200px" width="250px" alt="Personagem eleven" /></a>
-      <h3>ELEVEN</h3>
-    </div3>
-    <div4><a class="btnhopper" href="./hopper/fase1hopper.html">
-        <img src="./personagem2hopper.png" height="200px" width="250px" alt="Personagem Jim Hopper"></a>
-      <h3>HOPPER</h3>
-    </div4>
-    <div5><a class="btnwill" href="./will/fase1will.html">
-        <img src="./personagem3willbyers.png" height="200px" width="250px" alt="Personagem will byers"></a>
-      <h3>WILL</h3>
-    </div5>
-  </div2>
+  <main>
+
+    <div class="titulo">
+      <h1> Este é um jogo onde você encontrará perguntas sobre a série, e assim, deve respondê-las corretamente para
+        chegar até o final.<br>
+        Escolha seu personagem para iniciar o game:
+      </h1>
+    </div>
+    <nav>
+      <ul>
+        <li class="botoes">
+          <a class="btnEleven" href="./eleven/fase1eleven.html">
+            <img class="foto1" src="images/personagem1eleven.png" alt="Personagem eleven" />
+          </a>
+          <a class="btnHopper" href="./hopper/fase1hopper.html">
+            <img class="foto2" src="images/personagem2hopper.png" alt="Personagem Jim Hopper">
+          </a>
+          <a class="btnWill" href="./will/fase1will.html">
+            <img class="foto3" src="images/personagem3willbyers.png" alt="Personagem will byers">
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <ul class="namePerson">
+      <li>ELEVEN</li>
+      <li>HOPPER</li>
+      <li>WILL</li>
+    </ul>
+
+  </main>
+  <footer>
+    <p>2022 © Todos os Direitos Reservados. Desenvolvido por Luis Eduardo G. de Oliveira</p>
+  </footer>
 
 </body>
 
