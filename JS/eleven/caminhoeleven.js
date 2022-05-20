@@ -86,5 +86,5 @@ function fasetres() {
 }
 
 function restart (){
-    location.assign("../../index.html");
+    location.assign("../index.html");
 };

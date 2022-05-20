@@ -1,8 +1,9 @@
 body {
-    background-image: url(../backgrounds/hopperbackground1.jpg);
+    background-image: url(../../images/willbackground1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
+
 html {
     height: 100%;
     width: 100%;
@@ -11,6 +12,7 @@ html {
     border: 0px;
     box-sizing: border-box;
 }
+
 h1 {
     display: flex;
     justify-content: center;
@@ -21,7 +23,8 @@ h1 {
     margin: 1%;
     border-radius: 50px;
 }
-divpergunta1 {
+
+div {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -32,8 +35,9 @@ divpergunta1 {
     opacity: 80%;
     font-family: 'EB Garamond', serif;
     border-radius: 50px;
-    text-align: center;
+    text-align: justify;
 }
+
 .botaoresponder {
     width: 140px;
     height: 50px;
@@ -41,10 +45,10 @@ divpergunta1 {
     border-color: #ffffff;
     background-color: gold;
     transition: all 0.3s;
-  }
-  
+}
+
 .botaoresponder:hover {
-    background-color:darkred;
+    background-color: darkred;
     transform: scale(1.1);
     color: #e5e5e5;
 }
