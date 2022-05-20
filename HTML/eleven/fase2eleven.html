@@ -1,24 +1,40 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../CSS/eleven/elevenfase2.css">
+    <link rel="stylesheet" href="../../CSS/eleven/elevenfases.css">
     <link rel="icon" type="image/x-icon" href="../../images/demogorgon.ico">
     <title>FASE 2</title>
 </head>
+
 <body>
-    <header><h1>Trajetória da Eleven</h1></header>
-    <divpergunta2><p>2 - Depois de fugir da lanchonete, Eleven é encontrada por alguns personagens. Quais são eles?
-        <ul>
-            <li>A - Joice, Hopper e Karen</li>
-            <li>B - Dustin, Mike e Lucas</li>
-            <li>C - Nancy, Jonathan e Steve</li>
-        </ul>
-    </p>
-    <button onclick="fasedois()" class = "botaoresponder">RESPONDER</button>
-    </divpergunta2>
-    <script src="../../JS/eleven/caminhoeleven.js"></script>
+
+    <header>
+        <h1>Trajetória da Eleven</h1>
+    </header>
+
+    <main>
+        <div>
+            <ol start="2">
+                <li>Depois de fugir da lanchonete, Eleven é encontrada por alguns personagens. Quais são eles?</li>
+            </ol>
+
+            <ol type="A">
+                <li>Joice, Hopper e Karen</li>
+                <li>Dustin, Mike e Lucas</li>
+                <li>Nancy, Jonathan e Steve</li>
+            </ol>
+
+            <button
+                onclick="valida('b','Resposta correta! Eleven foi encontrada por seus futuros e melhores amigos! Vamos para a fase 3...','./fase3eleven.html', 'a','c', '../gameover.html', 'Qual é a resposta correta? digite apenas a letra a, b ou c (lembre-se, você tem apenas 2 chances!)','Resposta incorreta!', 'Infelizmente você perdeu todas as suas chances!')"
+                class="botaoresponder">RESPONDER</button>
+        </div>
+    </main>
+
+    <script src="../../JS/validacao.js"></script>
 </body>
+
 </html>

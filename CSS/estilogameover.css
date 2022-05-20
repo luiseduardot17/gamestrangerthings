@@ -1,8 +1,4 @@
-body {
-    background-image: url(../images/gameoverbackground.jpg);
-    background-size:cover;
-    background-repeat: no-repeat;
-}
+body,
 html {
     height: 100%;
     width: 100%;
@@ -10,24 +6,39 @@ html {
     margin: 0px;
     border: 0px;
     box-sizing: border-box;
+    background-image: url(../images/gameoverbackground.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    bottom: 0;
+    left: 0;
+    overflow: auto;
+    padding: 3em;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
 }
+
 h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    color:darkred;
+    color: darkred;
     font-family: 'EB Garamond', serif;
     font-size: 500%;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
 }
+
 .image {
     display: flex;
     justify-content: center;
     flex-direction: row;
     justify-content: flex-end;
-    max-width:10%;
+    max-width: 10%;
 }
+
 h2 {
     display: flex;
     justify-content: center;
@@ -38,6 +49,7 @@ h2 {
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
 }
+
 p {
     display: flex;
     justify-content: center;
@@ -47,12 +59,13 @@ p {
     font-size: 200%;
     padding: 3%;
 }
+
 .botaorestart {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width:max-content;
+    max-width: max-content;
     max-height: max-content;
     border-radius: 50px;
     border-color: black;
@@ -60,10 +73,10 @@ p {
     transition: all 0.3s;
     font-family: 'EB Garamond', serif;
     font-size: 200%;
-  }
-  
+}
+
 .botaorestart:hover {
-    background-color:darkred;
+    background-color: darkred;
     transform: scale(1.1);
     color: #e5e5e5;
     animation-name: pulsar;
@@ -72,6 +85,7 @@ p {
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
+
 div {
     display: flex;
     flex-direction: row;
@@ -79,11 +93,13 @@ div {
     align-items: flex-start;
     padding: 5%;
 }
+
 @keyframes pulsar {
-    0%{
+    0% {
         transform: scale(1);
     }
-    100%{
+
+    100% {
         transform: scale(1.1);
     }
 }

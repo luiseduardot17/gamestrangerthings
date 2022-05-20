@@ -1,8 +1,4 @@
-body {
-    background-image: url(../../images/elevenbackground1.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
+body,
 html {
     height: 100%;
     width: 100%;
@@ -10,7 +6,20 @@ html {
     margin: 0px;
     border: 0px;
     box-sizing: border-box;
+    background-image: url(../../images/elevenbackground1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size:100%;
+    bottom: 0;
+    left: 0;
+    overflow: auto;
+    padding: 3em;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
 }
+
 h1 {
     display: flex;
     justify-content: center;
@@ -21,7 +30,8 @@ h1 {
     margin: 1%;
     border-radius: 50px;
 }
-divpergunta2 {
+
+div {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -32,7 +42,9 @@ divpergunta2 {
     opacity: 80%;
     font-family: 'EB Garamond', serif;
     border-radius: 50px;
+    text-align: justify;
 }
+
 .botaoresponder {
     width: 140px;
     height: 50px;
@@ -40,10 +52,10 @@ divpergunta2 {
     border-color: #ffffff;
     background-color: gold;
     transition: all 0.3s;
-  }
-  
+}
+
 .botaoresponder:hover {
-    background-color:darkred;
+    background-color: darkred;
     transform: scale(1.1);
     color: #e5e5e5;
 }

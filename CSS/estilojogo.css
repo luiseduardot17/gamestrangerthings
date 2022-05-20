@@ -1,13 +1,11 @@
-body,
-html {
-    min-height: 100%;
+body {
     background-image: url(../images/telainicialwallpaper.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-}
-
-body {
-    padding: 0;
+    background-position: center;
+    font-family: 'EB Garamond', serif;
+    height: 100%;
+    width: 100%;
     margin: 0;
 }
 
@@ -15,6 +13,8 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
     background: rgba(22, 4, 4, 0.623);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(8px);
@@ -22,18 +22,18 @@ header {
 }
 
 footer {
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    height: 50px;
-    padding-top: 5px;
+    display: flex;
+    justify-content: center;
     text-align: center;
+    position:relative;
+    width: 100%;
+    height: 100px;
+    bottom: 0;
     background-color: black;
-    color: #FFF;
+    color: #FFFFFF;
 }
 
 .logo {
-    height: 30%;
     width: 30%;
     opacity: 50%;
 }
@@ -42,7 +42,6 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
     font-size: 150%;
     text-align: justify;
 }
@@ -61,7 +60,6 @@ footer {
     border-radius: 15px;
     text-align: center;
     font-size: 80%;
-    font-family: 'EB Garamond', serif;
 }
 
 .namePerson {
@@ -73,7 +71,12 @@ footer {
     background-color: black;
     color: white;
     font-size: 200%;
-    font-family: 'EB Garamond', serif;
+
+}
+
+.nomes {
+    padding-bottom: 30px;
+    height: 300px;
 }
 
 ul {
@@ -160,39 +163,18 @@ ul {
 }
 
 /* SMARTPHONE G */
-@media screen and (max-width: 425px) {
+/*@media screen and (min-width: 425px) {
+
     body {
-        background-image: url(./backgrounds/telainicialwallpapermobile.jpg);
-        background-size: auto;
-        background-position: top;
-        background-repeat: no-repeat;
-
-    }
-
-    html {
-        height: 100%;
-        width: 100%;
-        padding: 0px;
-        margin: 0px;
-        border: 0px;
-        box-sizing: border-box;
-    }
-
-    divheader {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        width: 100% height: 100%;
     }
 
     header {
-        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        text-align: justify;
-        background-color: black;
-        opacity: 90%;
+        height: 600px;
+        height: 60vh;
     }
 
     .logo {
@@ -202,29 +184,8 @@ ul {
 
     .sinopse {
         display: flex;
-        justify-content: center;
-        align-items: center;
         color: white;
         font-size: 150%;
         text-align: center;
-    }
-
-    div1 {
-        display: flex;
-        flex-direction: row;
-        text-align: center;
-        color: white;
-        background-color: black;
-        opacity: 70%;
-        margin: 5%;
-        font-size: 80%;
-        font-family: 'EB Garamond', serif;
-    }
-
-    div2 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
     }
 }
