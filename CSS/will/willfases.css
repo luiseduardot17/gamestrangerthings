@@ -1,21 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
 body {
     background-image: url(../../images/willbackground1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-html {
-    height: 100%;
-    width: 100%;
-    padding: 0px;
-    margin: 0px;
-    border: 0px;
-    box-sizing: border-box;
+/* Header */
+header {
+    text-align: center;
 }
 
 h1 {
-    display: flex;
-    justify-content: center;
     color: white;
     background-color: black;
     opacity: 70%;
@@ -23,6 +23,8 @@ h1 {
     margin: 1%;
     border-radius: 50px;
 }
+
+/* Main */
 
 div {
     display: flex;
@@ -34,7 +36,7 @@ div {
     background-color: black;
     opacity: 80%;
     font-family: 'EB Garamond', serif;
-    border-radius: 50px;
+    border-radius: 20px;
     text-align: justify;
 }
 
@@ -51,4 +53,29 @@ div {
     background-color: darkred;
     transform: scale(1.1);
     color: #e5e5e5;
+}
+
+/* MEDIA QUERY */
+
+@media screen and (max-width: 768px) {
+    body {
+        height: 100vh;
+        background-position:center;
+    }
+
+    main {
+        display: flex;
+        height: 90vh;
+        align-items: center;
+        padding: 5px;
+    }
+
+    div {
+        justify-content: flex-start;
+        height: 80vh;
+    }
+
+    button {
+        margin: 50px;
+    }
 }

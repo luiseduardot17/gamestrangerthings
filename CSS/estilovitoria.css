@@ -1,49 +1,44 @@
-body,
-html {
-    height: 100%;
-    width: 100%;
-    padding: 0px;
-    margin: 0px;
-    border: 0px;
-    box-sizing: border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body{
+    height: 100vh;
     background-image: url(../images/vitoriabackground.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-size:100%;
-    bottom: 0;
-    left: 0;
-    overflow: auto;
-    padding: 3em;
-    position: absolute;
-    right: 0;
+    font-family: 'EB Garamond', serif;
+}
+
+/* Header */
+header {
+    width: 100%;
     text-align: center;
-    top: 0;
 }
 
 h1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     color: gold;
-    font-family: 'EB Garamond', serif;
     font-size: 300%;
 }
 
+/* Main */
+
+main {
+    width: 100%;
+    text-align: center;
+}
+
 h2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     color: gold;
-    font-family: 'EB Garamond', serif;
     font-size: 200%;
 }
 
-.image {
+div {
     display: flex;
     justify-content: center;
-    flex-direction: row;
-    justify-content: flex-end;
-    max-width: 10%;
+    padding: 5%;
 }
 
 .botaorestart {
@@ -73,10 +68,11 @@ h2 {
 }
 
 div {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
     padding: 10%;
+}
+
+.icone {
+    width: 10%;
 }
 
 @keyframes pulsar {
@@ -86,5 +82,30 @@ div {
 
     100% {
         transform: scale(1.1);
+    }
+}
+
+/* MEDIA QUERY */
+
+@media screen and (max-width: 768px) {
+    
+    body {
+        background-position:center;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 60%;
+    }
+
+    h2 {
+        flex-wrap: wrap;
+        font-size: 200%;
+    }
+
+    .botaorestart {
+        font-size: 150%;
     }
 }
