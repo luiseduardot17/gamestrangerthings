@@ -9,7 +9,6 @@ body {
     background-size: cover;
     background-position: center;
     font-family: 'EB Garamond', serif;
-
 }
 
 /* Header*/
@@ -28,6 +27,7 @@ header {
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(8px);
     border: 1px solid rgba(71, 75, 136, 0.37);
+    padding: 10px;
 }
 
 .logo {
@@ -128,11 +128,11 @@ a:hover {
 
 footer {
     width: 100%;
-    height:10%;
+    height: 10%;
     display: flex;
     position: fixed;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     background-color: black;
 }
 
@@ -160,7 +160,7 @@ h3 {
 
     .intro {
         width: 100%;
-        height: 20vh;
+        height: 25vh;
     }
 
     h1 {
@@ -193,17 +193,17 @@ h3 {
     }
 
     a:hover {
-        animation:none;
+        animation: none;
     }
 
     /*FOOTER*/
 
     footer {
-    width: 100%;
-    height: 10%;
-    display: block;
-    position:absolute;
-    text-align: center;
-    background-color:rgb(119, 8, 8);
+        width: 100%;
+        height: 10%;
+        display: block;
+        position: absolute;
+        text-align: center;
+        background-color: rgb(119, 8, 8);
     }
 }
