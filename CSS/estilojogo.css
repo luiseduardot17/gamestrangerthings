@@ -1,15 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
 body {
     background-image: url(../images/telainicialwallpaper.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
     background-position: center;
     font-family: 'EB Garamond', serif;
-    height: 100%;
-    width: 100%;
-    margin: 0;
+
 }
 
+/* Header*/
+
 header {
+    width: 100%;
+}
+
+.cabecalho {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -21,24 +30,12 @@ header {
     border: 1px solid rgba(71, 75, 136, 0.37);
 }
 
-footer {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    position: relative;
-    width: 100%;
-    height: 100px;
-    bottom: 0;
-    background-color: black;
-    color: #FFFFFF;
-}
-
 .logo {
     width: 30%;
     opacity: 50%;
 }
 
-.sinopse {
+p {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,11 +43,14 @@ footer {
     text-align: justify;
 }
 
-.titulo {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+/* primeira sessão */
+
+.intro {
+    width: 100%;
+    height: 15vh;
+}
+
+h1 {
     color: white;
     background: rgba(22, 4, 4, 0.623);
     backdrop-filter: blur(5px);
@@ -59,92 +59,54 @@ footer {
     margin: 0.5%;
     border-radius: 15px;
     text-align: center;
-    font-size: 80%;
 }
 
-.namePerson {
+/* sessão dos botões */
+
+.navBtn {
     display: flex;
-    justify-content: center;
-    gap: 15%;
-    margin-bottom: 50px;
-    margin-top: 0%;
-    background-color: black;
-    color: white;
-    font-size: 200%;
-
-}
-
-.nomes {
-    padding-bottom: 30px;
-    height: 300px;
+    flex-direction: column;
+    width: 100%;
+    height: 42vh;
 }
 
 ul {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    margin: 0;
 }
 
-.botoes {
+.btns {
+    justify-content: space-evenly;
+}
+
+.nomes {
     display: flex;
-    justify-content: center;
-    height: 30%;
-    gap: 10%;
+    justify-content: space-evenly;
+    background-color: black;
+    color: white;
+    font-size: 200%;
 }
 
 .foto1 {
     width: 250px;
     height: 200px;
-    padding-right: 50%;
 }
 
 .foto2 {
     width: 200px;
     height: 200px;
-    padding-right: 20%;
 }
 
 .foto3 {
-    width: 200px;
+    width: 250px;
     height: 200px;
 }
 
-.btnEleven {
+a {
     display: flex;
-    justify-content: center;
-    height: 50%;
 }
 
-.btnHopper {
-    display: flex;
-    justify-content: center;
-    height: 50%;
-}
-
-.btnWill {
-    display: flex;
-    justify-content: center;
-    height: 50%;
-}
-
-.btnEleven:hover {
-    animation-name: pulsar;
-    animation-duration: 0.5s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-}
-
-.btnHopper:hover {
-    animation-name: pulsar;
-    animation-duration: 0.5s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-}
-
-.btnWill:hover {
+a:hover {
     animation-name: pulsar;
     animation-duration: 0.5s;
     animation-timing-function: ease-in-out;
@@ -162,105 +124,86 @@ ul {
     }
 }
 
-/* SMARTPHONE G */
+/*FOOTER*/
+
+footer {
+    width: 100%;
+    height:10%;
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+h3 {
+    text-align: center;
+    color: #FFFFFF;
+}
+
+
+/* MEDIA QUERY */
+
 @media screen and (max-width: 768px) {
-
-    body {
-        width: 100%;
-        height: 100%;
-        font-size: 25px;
-    }
-
-    header {
-        display: flex;
+    .cabecalho {
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-        width: 100%;
         padding: 10px;
+        border-radius: 25px;
     }
 
     .logo {
-        height: 50%;
         width: 100%;
+        border-radius: 25px;
     }
 
-    .titulo {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
+    /* primeira sessão */
+
+    .intro {
         width: 100%;
-        padding: 10px;
-        padding-top: 20px;
+        height: 20vh;
     }
 
-    nav {
-        display: flex;
+    h1 {
+        font-size: 150%;
+    }
+
+    /* sessão dos botões */
+
+    .navBtn {
+        height: 100vh;
         flex-direction: row;
-        width: 100%;
-        height: 100%;
-
+        justify-content: space-evenly;
+        background-color: black;
     }
 
     ul {
-        padding: 0;
-        justify-content: flex-start;
-
-    }
-
-    .botoes {
+        width: 50%;
         flex-direction: column;
-        gap: 20px;
-        align-items: center;
-        width: 340px;
-        padding: 10px;
-        height: 100%;
-
-    }
-
-    .foto1 {
-        padding: 0;
-    }
-
-    .foto2 {
-        padding: 0;
-    }
-
-    .foto3 {
-        padding: 0;
+        align-items: flex-end;
     }
 
     .nomes {
-        height: 680px;
-        justify-content: space-between;
-        padding: 10px;
-    }
-
-    .namePerson {
+        width: 100%;
+        height: 100%;
         flex-direction: column;
         justify-content: space-around;
-        width: fit-content;
-        align-items: center;
-        width: 340px;
-        padding: 10px;
-        height: 100%;
-        margin: 0;
         background-color: transparent;
+        color: white;
+        font-size: 200%;
     }
 
-    ol>li {
-        background-color: black;
-        width: 100%;
+    a:hover {
+        animation:none;
     }
+
+    /*FOOTER*/
 
     footer {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-        width: 100%;
-        padding: 10px;
+    width: 100%;
+    height: 10%;
+    display: block;
+    position:absolute;
+    text-align: center;
+    background-color:rgb(119, 8, 8);
     }
 }
